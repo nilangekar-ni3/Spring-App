@@ -10,7 +10,6 @@ public class MyRestController implements ErrorController {
 
 	@RequestMapping("/greeting")
 	public String greeting() {
-		System.out.println("greeting execute");
 		return "welcome to the Spring Boot Application";
 	}
 	
