@@ -11,7 +11,7 @@ public class MyRestController implements ErrorController {
 	@RequestMapping("/greeting")
 	public String greeting() {
 		System.out.println("greeting execute");
-		return "welcome";
+		return "welcome to the Spring Boot Application";
 	}
 	
 	private final static String PATH = "/error";
@@ -19,7 +19,6 @@ public class MyRestController implements ErrorController {
     @RequestMapping(PATH)
     @ResponseBody
     public String getErrorPath() {
-        // TODO Auto-generated method stub
         return "No Mapping Found";
     }
 	
